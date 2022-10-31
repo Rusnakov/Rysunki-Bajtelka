@@ -64,7 +64,7 @@ void zamianaSlowaNaLiczy (char *wektor_danych)
     dlugosc_wektora_wierzcholkow_pola=licznikLiczbyIntowej;
 }*/
 
-char wczytywanie_danych (void)
+char wczytanie_wiersza_danych (void)
 {
     int bufor[2][100000];
     int licznik_wczytywanego_wierzcholka=0;
@@ -80,16 +80,13 @@ char wczytywanie_danych (void)
     return &bufor[0][0];
 }
 
-
-
-
 int main()
 {
     int ilosc_testow, bufor[0][0];
     scanf("%d", &ilosc_testow);
     for (int i=0; i<ilosc_testow; i++)
     {
-        *bufor = wczytywanie_danych;
+        *bufor = wczytanie_wiersza_danych;
     }
     for (int i=0; i<2; i++)
     {
