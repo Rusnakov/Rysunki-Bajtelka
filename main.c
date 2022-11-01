@@ -39,13 +39,13 @@ int main() {
         pole2 = wczytanie_wiersza_danych();
 
         if (pole1 < pole2) {
-						tuszokule = (pole2-pole1)*3+pole1*5;
+	    tuszokule = (pole2-pole1)*3+pole1*5;
         }
 
         else {
-						tuszokule = (pole1-pole2)*3+pole2*5;
+	    tuszokule = (pole1-pole2)*3+pole2*5;
         }
-
+	    
         printf ("%I64u\n",tuszokule);
     }
 }
